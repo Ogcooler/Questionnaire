@@ -1,0 +1,241 @@
+body {
+    background-color: #191919;
+}
+.create-btn {
+    width: 395px;
+    height: 51px;
+    border-radius: 5px;
+    border: solid 1px #1b42cd;
+    color: #ffffff;
+    background-color: #191919;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Gilroy;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.create-btn:hover {
+    background-color: #1b42cd;
+    transition: 0.3s;
+}
+
+.link_create-btn {
+    text-decoration: none;
+}
+
+.questionnaire-title {
+    color: #ffffff;
+    font-family: Gilroy;
+    font-size: 24px;
+    margin: 61px 0px 30px 0px;
+}
+
+.list-group {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.survey-name {
+    margin-bottom: 16px;
+    font-family: Gilroy;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.share-title {
+    font-size: 16px;
+    font-family: Gilroy;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.questionnaire-list {
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share-input {
+    width: 268px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #eeecf7;
+    font-family: Gilroy;
+    color: #191919;
+    font-size: 14px;
+    border: 0px;
+    padding: 0px 0px 0px 9px;
+    margin-bottom: 25px;
+    margin-left: 127px;
+}
+
+.url-btn {
+    width: 130px;
+    height: 48px;
+    background-color: #1b42cb;
+    border: none;
+    color: #ffffff;
+    font-family: Gilroy;
+    font-size: 14px;
+    padding: 0px;
+    position: absolute;
+    left: 0px;
+    border: top;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.share-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.success-message {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 200px;
+    height: 30px;
+    color: #eeecf7;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: Gilroy;
+    background-color: #1b42cb;
+    border-radius: 4px;
+}
+
+.message-drop {
+    display: flex;
+    animation: dropUp 1.5s ease;
+}
+
+.message-down {
+    display: flex;
+    animation: dropDown 1.5s ease;
+}
+
+.success-message > div {
+    height: 20px;
+}
+
+@keyframes dropUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes dropDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    .create-btn {
+        width: 352px;
+        height: 46px;
+    }
+
+    .share-input {
+        width: 228px;
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .url-btn {
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .questionnaire-title {
+        font-size: 22px;
+        margin: 46px 0px 30px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .create-btn {
+        width: 334px;
+        height: 46px;
+        border-radius: 4px;
+    }
+
+    .share-input {
+        width: 224px;
+        height: 46px;
+        margin-left: 112px;
+        margin-bottom: 20px;
+    }
+
+    .url-btn {
+        width: 116px;
+        height: 46px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .create-btn {
+        width: 294px;
+        height: 38px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .share-input {
+        width: 184px;
+        height: 46px;
+        margin-bottom: 14px;
+        margin-left: 112px;
+    }
+
+    .url-btn {
+        width: 116px;
+        height: 46px;
+        font-size: 12px;
+    }
+
+    .questionnaire-title {
+        font-size: 20px;
+        margin: 42px 0px 30px 0px;
+    }
+
+    .survey-name {
+        font-size: 16px;
+    }
+
+    .share-title {
+        font-size: 14px;
+    }
+
+    .success-message {
+        right: 60px;
+    }
+}

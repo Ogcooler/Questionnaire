@@ -1,0 +1,264 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+}
+
+.questions {
+    width: 644px;
+    border-radius: 35px;
+    background-color: #eeecf7;
+    padding-bottom: 8px;
+}
+
+.question-block {
+    width: 628px;
+    height: 452px;
+    border-radius: 28px;
+    background-color: #ff2f6b;
+    margin: 8px 8px 0px 8px;
+}
+
+.question {
+    padding: 24px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 6px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.list-stata {
+    list-style: none;
+    font-family: Gilroy;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 14px 0px;
+    padding: 3px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #1b42cb;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    width: 55px;
+}
+
+.answer-list {
+    margin: 0px;
+    padding-left: 0px;
+    margin-left: 37px;
+}
+
+.questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Page-title {
+    margin: 159px 0px 85px 0px;
+    width: 100%;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.add-question,
+.take-a-survey {
+    width: 200px;
+    height: 27px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    border: solid 1px #eeecf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+}
+
+.add-question {
+    background-color: #ff2f6b;
+}
+
+.take-a-survey {
+    background-color: #1b42cb;
+    margin-left: 16px;
+}
+
+.menu-question a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Gilroy;
+    font-size: 14px;
+}
+
+.menu-question {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 14px 0px 6px 0px;
+}
+
+.sub-btn {
+    border: none;
+    width: 86px;
+    height: 25px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    border: solid 1px #eeecf7;
+    background-color: #eeecf7;
+    font-family: Gilroy;
+    font-size: 16px;
+    color: #ff2f6b;
+    margin: 13px 37px 13px 0px;
+    padding: 0px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.answer-list:after {
+    margin-top: 17px;
+    width: 554px;
+    height: 1px;
+    content: "";
+    display: block;
+    background-color: #eeecf7;
+}
+
+.take-a-survey:hover,
+.add-question:hover {
+    transform: translateY(-26%);
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    .questions {
+        width: 502px;
+    }
+
+    .question-block {
+        width: 486px;
+    }
+
+    .answer-list:after {
+        width: 414px;
+    }
+
+    .Page-title {
+        margin: 120px 0px 60px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .questions {
+        width: 558px;
+        font-size: 20px;
+    }
+
+    .question-block {
+        width: 486px;
+        height: 412px;
+    }
+
+    .answer-list:after {
+        width: 414px;
+    }
+
+    .Page-title {
+        margin: 90px 0px 45px 0px;
+    }
+
+    .list-stata {
+        font-size: 18px;
+    }
+
+    .count {
+        margin: 12px 0px;
+    }
+
+    .add-question,
+    .take-a-survey {
+        width: 170px;
+    }
+
+    .questions {
+        width: 502px;
+    }
+
+    .question {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .questions {
+        width: 306px;
+    }
+
+    .question-block {
+        width: 290px;
+        height: 345px;
+        border-radius: 22px;
+    }
+
+    .answer-list:after {
+        margin-top: 17px;
+        width: 216px;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .take-a-survey {
+        background-color: #1b42cb;
+        margin-left: 4px;
+    }
+
+    .add-question,
+    .take-a-survey {
+        width: 128px;
+    }
+
+    .menu-question a {
+        font-size: 12px;
+    }
+
+    .list-stata {
+        font-size: 14px;
+    }
+
+    .count {
+        margin: 8px 0px;
+    }
+
+    .sub-btn {
+        width: 78px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .Page-title {
+        margin: 70px 0px 22px 0px;
+        font-size: 18px;
+    }
+}

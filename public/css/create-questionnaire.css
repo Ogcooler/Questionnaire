@@ -1,0 +1,132 @@
+body {
+    background-color: #191919;
+}
+
+.title-label,
+.purpose-label {
+    width: 100%;
+    height: 23px;
+    font-family: Gilroy;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 13px;
+}
+
+.purpose-label {
+    margin-top: 20px;
+}
+
+.form-container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-input,
+.purpose-input {
+    width: 459px;
+    height: 61px;
+    font-family: Gilroy;
+    font-size: 20px;
+    padding: 0px 0px 0px 21px;
+    border: 0px;
+    color: #191919;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-questionnaire {
+    width: 160px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #1b42cb;
+    border: none;
+    color: #eeecf7;
+    font-family: Gilroy;
+    font-size: 18px;
+}
+
+.btn-wrapper {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    .title-input,
+    .purpose-input {
+        width: 406px;
+        height: 49px;
+        font-size: 18px;
+    }
+
+    .btn-questionnaire {
+        width: 148px;
+        height: 42px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .title-input,
+    .purpose-input {
+        width: 388px;
+        height: 46px;
+        font-size: 16px;
+    }
+
+    .title-label,
+    .purpose-label {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .btn-questionnaire {
+        width: 148px;
+        height: 42px;
+    }
+
+    .btn-wrapper {
+        margin-top: 26px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .title-input,
+    .purpose-input {
+        width: 276px;
+        height: 43px;
+        font-size: 16px;
+        padding: 0px 0px 0px 12px;
+    }
+
+    .title-label,
+    .purpose-label {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-bottom: 8px;
+    }
+
+    .btn-questionnaire {
+        width: 127px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .btn-wrapper {
+        margin-top: 22px;
+    }
+}

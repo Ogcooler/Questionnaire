@@ -1,0 +1,272 @@
+body {
+    background-color: #191919;
+}
+
+.Page-title {
+    font-family: Gilroy;
+    font-size: 24px;
+    color: #ffffff;
+    align-self: center;
+}
+
+.survey-options {
+    width: 527px;
+    padding-left: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+.survey-options:after {
+    display: block;
+    margin: 30px 0px;
+    content: "";
+    width: 527px;
+    border-bottom: 1px solid #707070;
+}
+
+.question {
+    font-family: Gilroy;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.answer {
+    position: relative;
+    display: flex;
+    align-content: center;
+    font-family: Gilroy;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 17px;
+    padding-left: 40px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border-radius: 5px;
+    background-color: #eeecf7;
+}
+
+.answer-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.answer-input:checked ~ .checkmark {
+    background-color: #ff2f6b;
+}
+
+.checkmark {
+    transition: 0.3s;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.answer-input:checked ~ .checkmark {
+    box-sizing: border-box;
+    padding: 4px;
+    content: url("../img/check.png");
+}
+
+.sub-title {
+    font-family: Gilroy;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.your-name,
+.email {
+    font-family: Gilroy;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 13px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-input {
+    width: 527px;
+    height: 61px;
+    background-color: #eeecf7;
+    color: #191919;
+    font-family: Gilroy;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px 0px 0px 21px;
+}
+
+.btn-questionnaire {
+    width: 526px;
+    height: 49px;
+    border-radius: 4px;
+    background-color: #1b42cb;
+    border: 0;
+    font-family: Gilroy;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 32px;
+    transition: 0.3s;
+}
+
+.btn-questionnaire:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: solid #1b42cb 1px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-group {
+    width: 527px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.email {
+    margin-top: 20px;
+}
+
+.your-name {
+    margin-top: 20px;
+}
+
+form {
+    margin: 148px 0px 148px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    margin-top: 77px;
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    form {
+        margin: 120px 0px 120px 0px;
+    }
+
+    .question {
+        margin-top: 38px;
+    }
+
+    .question {
+        font-size: 22px;
+        margin-bottom: 26px;
+    }
+
+    .survey-options,
+    .form-group,
+    .survey-options:after,
+    .text-input,
+    .btn-questionnaire {
+        width: 442px;
+    }
+
+    .text-input {
+        height: 52px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    form {
+        margin: 100px 0px 100px 0px;
+    }
+
+    .question {
+        margin-top: 38px;
+    }
+
+    .question {
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+
+    .survey-options,
+    .form-group,
+    .survey-options:after,
+    .text-input,
+    .btn-questionnaire {
+        width: 408px;
+    }
+
+    .text-input {
+        height: 52px;
+    }
+
+    .your-name {
+        margin-top: 2px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    form {
+        margin: 100px 0px 100px 0px;
+    }
+
+    .question {
+        margin-top: 30px;
+    }
+
+    .question {
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+
+    .survey-options,
+    .form-group,
+    .survey-options:after,
+    .text-input,
+    .btn-questionnaire {
+        width: 294px;
+    }
+
+    .text-input {
+        height: 52px;
+        font-size: 16px;
+        padding: 0px 0px 0px 18px;
+    }
+
+    .your-name {
+        margin-top: 2px;
+    }
+
+    .answer {
+        font-size: 18px;
+        padding-left: 34px;
+    }
+
+    .your-name,
+    .email {
+        font-size: 18px;
+    }
+
+    .btn-questionnaire {
+        height: 46px;
+    }
+}

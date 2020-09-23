@@ -1,0 +1,124 @@
+.name-label,
+.email-label,
+.pass-label,
+.passconf-label {
+    display: block;
+    margin-bottom: 13px;
+    font-family: Gilroy;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+input {
+    width: 459px;
+    height: 61px;
+    border-radius: 5px;
+    background-color: #eeecf7;
+    font-family: Gilroy;
+    font-size: 20px;
+    color: #191919;
+    border: 0px;
+    padding-left: 21px;
+    box-sizing: border-box;
+}
+
+.reg-button {
+    width: 459px;
+    height: 51px;
+    border: none;
+    background-color: #1b42cb;
+    color: #ffffff;
+    font-family: Gilroy;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.email-group:after {
+    display: block;
+    margin: 55px 0px;
+    content: "";
+    width: 459px;
+    border-bottom: 5px solid #1b42cb;
+}
+
+.card-body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    input {
+        width: 412px;
+        height: 54px;
+    }
+
+    .email-group:after {
+        width: 412px;
+    }
+
+    .reg-button {
+        width: 412px;
+    }
+
+    .email-group:after {
+        display: block;
+        margin: 38px 0px;
+    }
+
+    .reg-button {
+        margin-top: 29px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    input {
+        width: 396px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .email-group:after {
+        width: 396px;
+        margin: 38px 0px;
+    }
+
+    .reg-button {
+        width: 396px;
+        height: 48px;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    input {
+        width: 284px;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .reg-button {
+        width: 284px;
+        height: 44px;
+        margin-top: 6px;
+        font-size: 16px;
+    }
+
+    .email-group:after {
+        margin: 30px 0px;
+        width: 284px;
+    }
+
+    .name-label,
+    .email-label,
+    .pass-label,
+    .passconf-label {
+        font-size: 16px;
+    }
+}

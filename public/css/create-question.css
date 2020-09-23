@@ -1,0 +1,133 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #191919;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-input,
+.answer1-input,
+.answer2-input,
+.answer3-input,
+.answer4-input {
+    width: 459px;
+    height: 61px;
+    border-radius: 5px;
+    background-color: #eeecf7;
+    color: #191919;
+    font-family: Gilroy;
+    font-size: 20px;
+    padding: 0px 0px 0px 21px;
+}
+
+label {
+    font-family: Gilroy;
+    font-size: 20px;
+    color: #ffffff;
+}
+.btn-questionnaire {
+    margin-top: 32px;
+    width: 459px;
+    height: 49px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: #ff2f6b;
+    color: #ffffff;
+    font-family: Gilroy;
+    font-size: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    width: 459px;
+    justify-content: flex-start;
+    margin: 20px 0px 13px 0px;
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    .title-input,
+    .answer1-input,
+    .answer2-input,
+    .answer3-input,
+    .answer4-input {
+        width: 418px;
+        height: 54px;
+        border-radius: 4px;
+    }
+
+    .btn-questionnaire {
+        width: 418px;
+        height: 48px;
+    }
+
+    label {
+        width: 418px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .title-input,
+    .answer1-input,
+    .answer2-input,
+    .answer3-input,
+    .answer4-input {
+        width: 380px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .btn-questionnaire {
+        width: 380px;
+        height: 44px;
+    }
+
+    label {
+        width: 380px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .title-input,
+    .answer1-input,
+    .answer2-input,
+    .answer3-input,
+    .answer4-input {
+        width: 308px;
+        height: 44px;
+        font-size: 16px;
+        padding: 0px 0px 0px 12px;
+    }
+
+    .btn-questionnaire {
+        margin-top: 16px;
+        width: 308px;
+        height: 48;
+        font-size: 16px;
+    }
+
+    label {
+        width: 308px;
+        font-size: 16px;
+        margin: 12px 0px 6px 0px;
+    }
+
+    .form-container {
+        margin-top: 30px;
+    }
+}

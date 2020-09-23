@@ -1,0 +1,125 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #191919;
+    overflow: hidden;
+}
+
+.create-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 343px;
+    height: 49px;
+    border-radius: 4px;
+    border: solid 3px #ff2f6b;
+    font-family: Gilroy;
+    font-size: 18px;
+    color: #eeecf7;
+}
+
+.create-btn-link {
+    text-decoration: none;
+}
+
+.create-btn-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-coub {
+    background-color: #ff2f6b;
+}
+
+.blue-coub {
+    background-color: #1b42cb;
+}
+
+.coub {
+    width: 99px;
+    height: 99px;
+    border-radius: 13px;
+    position: absolute;
+}
+
+.top-cub-group .coub:first-child {
+    right: 179px;
+}
+
+.top-cub-group .coub:nth-child(3) {
+    right: 0px;
+    top: 160px;
+}
+
+.top-cub-group .coub:nth-child(2) {
+    right: 60px;
+    top: 37px;
+}
+
+.bottom-cub-group .coub:nth-child(2) {
+    left: 50px;
+    bottom: 37px;
+}
+
+.bottom-cub-group .coub:first-child {
+    left: 0px;
+    bottom: 160px;
+}
+
+.bottom-cub-group .coub:nth-child(3) {
+    left: 179px;
+    bottom: 0px;
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    .create-btn-wrapper {
+        width: 294px;
+        height: 42px;
+        border: solid 2px #ff2f6b;
+    }
+
+    .coub {
+        width: 77px;
+        height: 77px;
+        border-radius: 9px;
+    }
+
+    .nav-list li {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .coub {
+        width: 66px;
+        height: 66px;
+        border-radius: 8px;
+    }
+
+    .create-btn-wrapper {
+        width: 254px;
+        height: 36px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .coub {
+        width: 44px;
+        height: 44px;
+        border-radius: 6px;
+    }
+
+    .create-btn-wrapper {
+        width: 229px;
+        height: 36px;
+        font-size: 16px;
+        border: solid 1px #ff2f6b;
+    }
+}

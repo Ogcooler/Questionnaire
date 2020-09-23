@@ -1,0 +1,178 @@
+.email-input,
+.password-input {
+    width: 459px;
+    height: 61px;
+    border-radius: 5px;
+    background-color: #eeecf7;
+    margin-bottom: 20px;
+    padding: 0px;
+    border: 0px;
+    padding-left: 21px;
+    color: #191919;
+    font-family: Gilroy;
+}
+
+.password-label,
+.email-label {
+    font-family: Gilroy;
+    font-size: 20px;
+    color: #eeecf7;
+    margin-bottom: 13px;
+}
+
+.password-input {
+    font-size: 38px;
+}
+
+.email-input {
+    font-size: 20px;
+}
+
+.login-btn {
+    width: 459px;
+    height: 49px;
+    border-radius: 4px;
+    background-color: #1b42cb;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+}
+
+.card-body {
+    margin-top: 74px;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.remember-pass-label {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Gilroy;
+}
+
+.remember-pass-input {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: #eeecf7;
+    padding: 0px;
+    margin: 0px 10px 0px 0px;
+}
+
+.remember-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Gilroy;
+    margin: 10px 0px 0px 0px;
+    color: #ffffff;
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    .email-input,
+    .password-input {
+        font-size: 18px;
+        width: 412px;
+        height: 48px;
+        border-radius: 3px;
+    }
+
+    .login-btn {
+        width: 412px;
+        height: 42px;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    .remember-pass-input {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    .email-input {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .email-input,
+    .password-input {
+        width: 394px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .login-btn {
+        width: 394px;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .password-label,
+    .email-label {
+        font-size: 16px;
+    }
+
+    .remember-pass-label,
+    .forgot-password {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .email-input,
+    .password-input {
+        width: 286px;
+        height: 40px;
+        border-radius: 4px;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .password-label,
+    .email-label {
+        font-family: Gilroy;
+        font-size: 16px;
+        margin: 12px 0px 12px 0px;
+    }
+
+    .remember-pass-input {
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+    }
+
+    .remember-pass-label {
+        font-size: 14px;
+    }
+
+    .forgot-password {
+        font-size: 14px;
+    }
+
+    .email-input {
+        font-size: 16px;
+        margin: 0px 8px 0px 0px;
+    }
+
+    .login-btn {
+        width: 286px;
+        height: 36px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+}
